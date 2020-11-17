@@ -1,0 +1,468 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script scr="ексто/script.js"></script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS for styling and layout-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+</head>
+<header>
+  <div class = "container"><div class = "row"><div class ="12-col">
+<img src="https://astaor.mediexpo.ru/esska-new/img/ecsto-logo.png" alt="ecsto">
+</div> </div> </div>
+</header>
+<hr>
+
+<body>
+
+    <h1>Состояние плечевого сустава</h1>
+    <p>Уважаемый пациент!<br>Просим Вас заполнить анкету.</p>
+ 
+    <form action="" method="POST">
+
+        <form id="userdata">
+            <label for="lname">Фамилия:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="fname">Имя, отчество:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="birthday">Дата рождения:</label><br>
+            <input type="date" id="birthday" name="birthday">
+        </form>
+        
+        <hr>
+        <form id="questions">
+            <label for="dropdown">Оцените общий уровень интенсивности боли в вашем плечевом суставе от 0 до 10 (максимальная боль)</label>
+
+            <select name="dropdown">
+                <option value="zero">0</option>
+
+                <option value="first">1</option>
+
+                <option value="second">2</option>
+
+                <option value="third">3</option>
+                <option value="fourth">4</option>
+                <option value="fifth">5</option>
+                <option value="sixth">6</option>
+                <option value="seventh">7</option>
+                <option value="eighth">8</option>
+                <option value="nineth">9</option>
+                <option value="tenth">10</option>
+
+            </select>
+            
+<hr>
+
+
+            <label for="radio">1. Можете ли Вы лежать на больном плече:</label><br>
+
+            <input type="radio" name="radio1" value="true">
+
+            <label for="true">Да</label>
+
+            <input type="radio" name="radio1" value="false">
+
+            <label for="false">Нет</label>
+
+            <hr>
+            <label for="radio">2. Бывают ли у Вас проблемы со сном из-за боли или дискомфорта в плечевом суставе:</label><br>
+
+            <input type="radio" name="radio2" value="true">
+
+            <label for="true">Да</label>
+
+            <input type="radio" name="radio2" value="false">
+
+            <label for="false">Нет</label>
+
+            <hr>
+            <label for="radio">3. Вы можете достать до спины, чтобы заправить рубашку больной рукой:</label><br>
+
+            <input type="radio" name="radio3" value="true">
+
+            <label for="true">Да</label>
+
+            <input type="radio" name="radio3" value="false">
+
+            <label for="false">Нет</label>
+
+            <hr>
+            <label for="radio">4. Можете ли Вы завести руку за голову (дотронуться до затылка):</label><br>
+
+            <input type="radio" name="radio4" value="true">
+
+            <label for="true">Да</label>
+
+            <input type="radio" name="radio4" value="false">
+
+            <label for="false">Нет</label>
+
+            <hr>
+            <label for="radio">5. Можете ли Вы поднять предмет весом 0,5 кг (бутылка воды) на уровень глаз прямой рукой:</label><br>
+
+            <input type="radio" name="radio5" value="true">
+
+            <label for="true">Да</label>
+
+            <input type="radio" name="radio5" value="false">
+
+            <label for="false">Нет</label>
+
+            <hr>
+            <label for="radio">6. Можете ли Вы поднять предмет весом 5 кг на уровень глаз прямой рукой:</label><br>
+
+            <input type="radio" name="radio6" value="true">
+
+            <label for="true">Да</label>
+
+            <input type="radio" name="radio6" value="false">
+
+            <label for="false">Нет</label>
+
+            <hr>
+            <label for="radio">7. Можете ли Вы самостоятельно перенести сумку весом 10 кг больной рукой:</label><br>
+
+            <input type="radio" name="radio7" value="true">
+
+            <label for="true">Да</label>
+
+            <input type="radio" name="radio7" value="false">
+
+            <label for="false">Нет</label>
+
+            <hr>
+            <label for="radio">8. Можете ли Вы бросить теннисный мяч из-за головы на расстояние 20 метров:</label><br>
+
+            <input type="radio" name="radio8" value="true">
+
+            <label for="true">Да</label>
+
+            <input type="radio" name="radio8" value="false">
+
+            <label for="false">Нет</label>
+
+            <hr>
+            <label for="radio">9. Можете ли Вы самостоятельно мыть противоположную сторону спины больной рукой:</label><br>
+
+            <input type="radio" name="radio9" value="true">
+
+            <label for="true">Да</label>
+
+            <input type="radio" name="radio9" value="false">
+
+            <label for="false">Нет</label>
+
+            <hr>
+
+            <label for="radio">10. Позволяет ли Ваш плечевой сустав полноценно работать поолный рабочий день:</label><br>
+
+            <input type="radio" name="radio10" value="true">
+
+            <label for="true">Да</label>
+
+            <input type="radio" name="radio10" value="false">
+
+            <label for="false">Нет</label>
+
+            <hr>
+            
+                <h3>Насколько Вам тяжело:</h3>
+                <hr>
+                <label for="radio">1. Надеть пальто</label><br>
+
+                <input type="radio" name="radio11" value="yes">
+
+                <label for="yes">Да, могу</label>
+
+                <input type="radio" name="radio11" value="soso">
+
+                <label for="soso">Умеренные трудности</label>
+                <input type="radio" name="radio11" value="fhard">
+
+                <label for="fhard">Очень сложно</label>
+
+                <input type="radio" name="radio11" value="imppossible">
+
+                <label for="impossible">Невозможно</label>
+
+                <hr>
+                <label for="radio">2. Спать на больном плече</label><br>
+
+                <input type="radio" name="radio12" value="yes">
+
+                <label for="yes">Да, могу</label>
+
+                <input type="radio" name="radio12" value="soso">
+
+                <label for="soso">Умеренные трудности</label>
+                <input type="radio" name="radio12" value="fhard">
+
+                <label for="fhard">Очень сложно</label>
+
+                <input type="radio" name="radio12" value="imppossible">
+
+                <label for="impossible">Невозможно</label>
+                <hr>
+                <label for="radio">3. Принимать душ и мыть спину</label><br>
+
+                <input type="radio" name="radio13" value="yes">
+
+                <label for="yes">Да, могу</label>
+
+                <input type="radio" name="radio13" value="soso">
+
+                <label for="soso">Умеренные трудности</label>
+                <input type="radio" name="radio13" value="fhard">
+
+                <label for="fhard">Очень сложно</label>
+
+                <input type="radio" name="radio13" value="imppossible">
+
+                <label for="impossible">Невозможно</label>
+                <hr>
+                <label for="radio">4. Посещать туалет</label><br>
+
+                <input type="radio" name="radio14" value="yes">
+
+                <label for="yes">Да, могу</label>
+
+                <input type="radio" name="radio14" value="soso">
+
+                <label for="soso">Умеренные трудности</label>
+                <input type="radio" name="radio14" value="fhard">
+
+                <label for="fhard">Очень сложно</label>
+
+                <input type="radio" name="radio14" value="imppossible">
+
+                <label for="impossible">Невозможно</label>
+                <hr>
+                <label for="radio">5. Расчесываться</label><br>
+
+                <input type="radio" name="radio15" value="yes">
+
+                <label for="yes">Да, могу</label>
+
+                <input type="radio" name="radio15" value="soso">
+
+                <label for="soso">Умеренные трудности</label>
+                <input type="radio" name="radio15" value="fhard">
+
+                <label for="fhard">Очень сложно</label>
+
+                <input type="radio" name="radio15" value="imppossible">
+
+                <label for="impossible">Невозможно</label>
+                <hr>
+                <label for="radio">6. Обедать ножом и вилкой</label><br>
+
+                <input type="radio" name="radio16" value="yes">
+
+                <label for="yes">Да, могу</label>
+
+                <input type="radio" name="radio16" value="soso">
+
+                <label for="soso">Умеренные трудности</label>
+                <input type="radio" name="radio16" value="fhard">
+
+                <label for="fhard">Очень сложно</label>
+
+                <input type="radio" name="radio16" value="imppossible">
+
+                <label for="impossible">Невозможно</label>
+                <hr>
+                <label for="radio">7. Дотянуться до верхней полки</label><br>
+
+                <input type="radio" name="radio17" value="yes">
+
+                <label for="yes">Да, могу</label>
+
+                <input type="radio" name="radio17" value="soso">
+
+                <label for="soso">Умеренные трудности</label>
+                <input type="radio" name="radio17" value="fhard">
+
+                <label for="fhard">Очень сложно</label>
+
+                <input type="radio" name="radio17" value="imppossible">
+
+                <label for="impossible">Невозможно</label>
+                <hr>
+                <label for="radio">8. Поднять груз весом 5кг выше головы</label><br>
+
+                <input type="radio" name="radio18" value="yes">
+
+                <label for="yes">Да, могу</label>
+
+                <input type="radio" name="radio18" value="soso">
+
+                <label for="soso">Умеренные трудности</label>
+                <input type="radio" name="radio18" value="fhard">
+
+                <label for="fhard">Очень сложно</label>
+
+                <input type="radio" name="radio18" value="imppossible">
+
+                <label for="impossible">Невозможно</label>
+                <hr>
+                <label for="radio">9. Кинуть мяч из-за головы</label><br>
+
+                <input type="radio" name="radio19" value="yes">
+
+                <label for="yes">Да, могу</label>
+
+                <input type="radio" name="radio19" value="soso">
+
+                <label for="soso">Умеренные трудности</label>
+                <input type="radio" name="radio19" value="fhard">
+
+                <label for="fhard">Очень сложно</label>
+
+                <input type="radio" name="radio19" value="imppossible">
+
+                <label for="impossible">Невозможно</label>
+                <hr>
+                <label for="radio">10. Выполнять обычную работу</label><br>
+
+                <input type="radio" name="radio20" value="yes">
+
+                <label for="yes">Да, могу</label>
+
+                <input type="radio" name="radio20" value="soso">
+
+                <label for="soso">Умеренные трудности</label>
+                <input type="radio" name="radio20" value="fhard">
+
+                <label for="fhard">Очень сложно</label>
+
+                <input type="radio" name="radio20" value="imppossible">
+
+                <label for="impossible">Невозможно</label>
+                <hr>
+                <label for="radio">11. Заниматься спортом</label><br>
+
+                <input type="radio" name="radio21" value="yes">
+
+                <label for="yes">Да, могу</label>
+
+                <input type="radio" name="radio21" value="soso">
+
+                <label for="soso">Умеренные трудности</label>
+                <input type="radio" name="radio21" value="fhard">
+
+                <label for="fhard">Очень сложно</label>
+
+                <input type="radio" name="radio21" value="imppossible">
+
+                <label for="impossible">Невозможно</label>
+                <hr>
+                <label for="radio">12. Садиться и выходить из машины</label><br>
+
+                <input type="radio" name="radio22" value="yes">
+
+                <label for="yes">Да, могу</label>
+
+                <input type="radio" name="radio22" value="soso">
+
+                <label for="soso">Умеренные трудности</label>
+                <input type="radio" name="radio22" value="fhard">
+
+                <label for="fhard">Очень сложно</label>
+
+                <input type="radio" name="radio22" value="imppossible">
+
+                <label for="impossible">Невозможно</label>
+            
+            <hr>
+            
+                <h3>Пожалуйста, ответьте на следующие вопросы:</h3>
+                <hr>
+                <label for="radio">В целом, Вы удовлетворены вашим плечевым суставом?</label><br>
+
+                <input type="radio" name="radio23" value="yes">
+
+                <label for="yes">Да, удовлетворен</label>
+
+                <input type="radio" name="radio23" value="no">
+
+                <label for="no">Нет, не удовлетворен</label>
+
+                <hr>
+                <label for="radio">Вы смогли бы вернуться к прежнему уровню спортивных нагрузок?</label><br>
+
+                <input type="radio" name="radio24" value="yes">
+
+                <label for="yes">Да, смог</label>
+
+                <input type="radio" name="radio24" value="soso">
+
+                <label for="soso">Нет, не смог</label>
+                <hr>
+                <label for="radio">Пройденная реабилитация была эффективна?</label><br>
+
+                <input type="radio" name="radio25" value="yes">
+
+                <label for="yes">Да</label>
+
+                <input type="radio" name="radio25" value="soso">
+
+                <label for="soso">Нет</label>
+
+                <input type="radio" name="radio25" value="imppossible">
+                <label for="imppossible">Не знаю</label>
+
+                <hr>
+                <label for="radio">Согласились бы Вы на данную операцию, зная заранее о ее результатах?</label><br>
+
+                <input type="radio" name="radio26" value="yes">
+
+                <label for="yes">Да</label>
+
+                <input type="radio" name="radio26" value="soso">
+
+                <label for="soso">Нет</label>
+
+                <input type="radio" name="radio26" value="imppossible">
+                <label for="imppossible">Не знаю</label>
+
+                <hr>
+                
+            <label for="slider">Оцените состояние (общая функция) вашего плечевого сустава на сегодня от 0% до 100% (норма):</label>
+
+            <br>
+
+            <span>0%</span>
+
+            <input type="range" name="slider" class="myslider" id="sliderRange" value="3" step="1" min="0" max="100">
+
+            <span>100%</span> <br>
+
+            <p>Процент: <span id="demo"></span></p>
+
+
+            <script>
+                var rangeslider = document.getElementById("sliderRange");
+                var output = document.getElementById("demo");
+                output.innerHTML = rangeslider.value;
+
+                rangeslider.oninput = function() {
+                    output.innerHTML = this.value;
+                }
+
+            </script>
+
+           
+            <br>
+            <input type="submit" class = "submitbutton" value="Отправить результаты">
+
+        </form>
+
+</body>
+
+</html>
