@@ -1,28 +1,29 @@
 img {
-      display: block;
+    display: block;
     height: auto;
     max-width: 100%;
+    position: left top;
     
   
 }
 body {
-  background-color: white;
-  font-family: 'Roboto', sans-serif;
-  font-size: 12px;
-  margin-left: 5px;
-  margin-right:5px;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    margin-left: 10px;
+    margin-right:10px;
 }
 h1 {
-   margin-left: 15px;
-  margin-right:15px;
+    margin-left: 15px;
+    margin-right:15px;
     text-align: center;
 }
 
 p {
-  color: black;
-  font-size: 16px;
-  line-height: 48px;
-  padding: 10px 20px;
+    color: black;
+    font-size: 16px;
+    line-height: 48px;
+    padding: 10px 20px;
     text-align: center;
 }
 form {
