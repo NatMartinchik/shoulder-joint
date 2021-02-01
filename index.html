@@ -3,7 +3,6 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script scr="ексто/script.js"></script>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,20 +23,17 @@
     <p>Уважаемый пациент!<br>Просим Вас заполнить анкету.</p>
  
     <form action="insert.php" method="POST">
-
         
             <label for="lname">Фамилия:</label><br>
             <input type="text" id="lname" name="lname" ><br>
             <label for="fname">Имя, отчество:</label><br>
             <input type="text" id="fname" name="fname" ><br>
             <label for="birthday">Дата рождения:</label><br>
-            <input type="date" id="birthday" name="birthday" >
-        
+            <input type="date" id="birthday" name="birthday">      
         
         <hr>
        
             <label for="dropdown">Оцените общий уровень интенсивности боли в вашем плечевом суставе от 0 до 10 (максимальная боль)</label>
-
             <select name="dropdown">
                 <option value="zero">0</option>
                 <option value="first">1</option>
@@ -53,400 +49,156 @@
 
             </select>
             
-<hr>
-
-
+        <hr>
+        <div class = "px-4">   
             <label for="radio">1. Можете ли Вы лежать на больном плече:</label><br>
-
-            <input type="radio" name="radio1" value="da">
-
-            <label for="da">Да</label>
-
-            <input type="radio" name="radio1" value="net">
-
-            <label for="net">Нет</label>
-
-            <hr>
-         <div class = "px-4">   <label for="radio">2. Бывают ли у Вас проблемы со сном из-за боли или дискомфорта в плечевом суставе:</label><br>
-
-            <input type="radio" name="radio2" value="da">
-
-            <label for="da">Да</label>
-
-            <input type="radio" name="radio2" value="net">
-
-            <label for="net">Нет</label></div>
-
+            <label ><input type="radio" name="radio1" value="da"/> Да</label>
+            <label><input type="radio" name="radio1" value="net"/>  Нет</label>
+            <hr>          
+            <label for="radio">2. Бывают ли у Вас проблемы со сном из-за боли или дискомфорта в плечевом суставе:</label><br>
+            <label><input type="radio" name="radio2" value="da"/> Да</label>
+            <label ><input type="radio" name="radio2" value="net"/> Нет</label>
             <hr>
             <label for="radio">3. Вы можете достать до спины, чтобы заправить рубашку больной рукой:</label><br>
-
-            <input type="radio" name="radio3" value="da">
-
-            <label for="da">Да</label>
-
-            <input type="radio" name="radio3" value="net">
-
-            <label for="net">Нет</label>
-
-            <hr>
-          <div class = "px-4">  <label for="radio">4. Можете ли Вы завести руку за голову (дотронуться до затылка):</label><br>
-
-            <input type="radio" name="radio4" value="da">
-
-            <label for="da">Да</label>
-
-            <input type="radio" name="radio4" value="net">
-
-            <label for="net">Нет</label></div>
-
+            <label><input type="radio" name="radio3" value="da"/> Да</label>
+            <label><input type="radio" name="radio3" value="net"/> Нет</label>
+            <hr>          
+            <label for="radio">4. Можете ли Вы завести руку за голову (дотронуться до затылка):</label><br>
+            <label><input type="radio" name="radio4" value="da"/> Да</label>
+            <label><input type="radio" name="radio4" value="net"/> Нет</label>
             <hr>
             <label for="radio">5. Можете ли Вы поднять предмет весом 0,5 кг (бутылка воды) на уровень глаз прямой рукой:</label><br>
-
-            <input type="radio" name="radio5" value="da">
-
-            <label for="da">Да</label>
-
-            <input type="radio" name="radio5" value="net">
-
-            <label for="net">Нет</label>
-
+            <label><input type="radio" name="radio5" value="da"/> Да</label>
+            <label><input type="radio" name="radio5" value="net"/> Нет</label>
             <hr>
             <label for="radio">6. Можете ли Вы поднять предмет весом 5 кг на уровень глаз прямой рукой:</label><br>
-
-            <input type="radio" name="radio6" value="da">
-
-            <label for="da">Да</label>
-
-            <input type="radio" name="radio6" value="net">
-
-            <label for="net">Нет</label>
-
+            <label><input type="radio" name="radio6" value="da"/> Да</label>
+            <label><input type="radio" name="radio6" value="net"/> Нет</label>
             <hr>
             <label for="radio">7. Можете ли Вы самостоятельно перенести сумку весом 10 кг больной рукой:</label><br>
-
-            <input type="radio" name="radio7" value="da">
-
-            <label for="da">Да</label>
-
-            <input type="radio" name="radio7" value="net">
-
-            <label for="net">Нет</label>
-
+            <label><input type="radio" name="radio7" value="da"/> Да</label>
+            <label><input type="radio" name="radio7" value="net"/> Нет</label>
             <hr>
             <label for="radio">8. Можете ли Вы бросить теннисный мяч из-за головы на расстояние 20 метров:</label><br>
-
-            <input type="radio" name="radio8" value="da">
-
-            <label for="da">Да</label>
-
-            <input type="radio" name="radio8" value="net">
-
-            <label for="net">Нет</label>
-
+            <label><input type="radio" name="radio8" value="da"/> Да</label>
+            <label><input type="radio" name="radio8" value="net"/> Нет</label>
             <hr>
             <label for="radio">9. Можете ли Вы самостоятельно мыть противоположную сторону спины больной рукой:</label><br>
-
-            <input type="radio" name="radio9" value="da">
-
-            <label for="da">Да</label>
-
-            <input type="radio" name="radio9" value="net">
-
-            <label for="net">Нет</label>
-
+            <label><input type="radio" name="radio9" value="da"/> Да</label>
+            <label><input type="radio" name="radio9" value="net"/> Нет</label>
             <hr>
-
-            <label for="radio">10. Позволяет ли Ваш плечевой сустав полноценно работать поолный рабочий день:</label><br>
-
-            <input type="radio" name="radio10" value="da">
-
-            <label for="da">Да</label>
-
-            <input type="radio" name="radio10" value="net">
-
-            <label for="net">Нет</label>
-
+            <label for="radio">10. Позволяет ли Ваш плечевой сустав полноценно работать полный рабочий день:</label><br>
+            <label><input type="radio" name="radio10" value="da"/> Да</label>
+            <label><input type="radio" name="radio10" value="net"/> Нет</label>
             <hr>
-            
-                <h3>Насколько Вам тяжело:</h3>
-                <hr>
-               <div class = "px-4"> <label for="radio">1. Надеть пальто</label><br>
-
-                <input type="radio" name="radio11" value="da">
-
-                <label for="da">Да, могу</label>
-
-                <input type="radio" name="radio11" value="est_trudnosti">
-
-                <label for="est_trudnosti">Умеренные трудности</label>
-                <input type="radio" name="radio11" value="slojno">
-
-                <label for="slojno">Очень сложно</label>
-
-                <input type="radio" name="radio11" value="net">
-
-                <label for="net">Невозможно</label>
-
+        </div>    
+        <h3>Насколько Вам тяжело:</h3>
+        <hr>
+        <div class = "px-4"> 
+                <label for="radio">1. Надеть пальто</label><br>
+                <label><input type="radio" name="radio11" value="da"/> Да, могу</label>
+                <label><input type="radio" name="radio11" value="est_trudnosti"/>Умеренные трудности</label>
+                <label><input type="radio" name="radio11" value="slojno"/> Очень сложно</label>
+                <label><input type="radio" name="radio11" value="net"/> Невозможно</label>
                 <hr>
                 <label for="radio">2. Спать на больном плече</label><br>
-
-                <input type="radio" name="radio12" value="da">
-
-                <label for="da">Да, могу</label>
-
-                <input type="radio" name="radio12" value="est_trudnosti">
-
-                <label for="est_trudnosti">Умеренные трудности</label>
-                <input type="radio" name="radio12" value="slojno">
-
-                <label for="slojno">Очень сложно</label>
-
-                <input type="radio" name="radio12" value="net">
-
-                <label for="net">Невозможно</label>
+                <label><input type="radio" name="radio12" value="da"/> Да, могу</label>
+                 <label><input type="radio" name="radio12" value="est_trudnosti"/> Умеренные трудности</label>
+                <label><input type="radio" name="radio12" value="slojno"/> Очень сложно</label>
+                <label><input type="radio" name="radio12" value="net"/> Невозможно</label>
                 <hr>
                 <label for="radio">3. Принимать душ и мыть спину</label><br>
-
-                <input type="radio" name="radio13" value="da">
-
-                <label for="da">Да, могу</label>
-
-                <input type="radio" name="radio13" value="est_trudnosti">
-
-                <label for="est_trudnosti">Умеренные трудности</label>
-                <input type="radio" name="radio13" value="slojno">
-
-                <label for="slojno">Очень сложно</label>
-
-                <input type="radio" name="radio13" value="net">
-
-                <label for="net">Невозможно</label>
+                <label><input type="radio" name="radio13" value="da"/> Да, могу</label>
+                <label><input type="radio" name="radio13" value="est_trudnosti"/> Умеренные трудности</label>
+                <label><input type="radio" name="radio13" value="slojno"/> Очень сложно</label>
+                <label><input type="radio" name="radio13" value="net"/> Невозможно</label>
                 <hr>
                 <label for="radio">4. Посещать туалет</label><br>
-
-                <input type="radio" name="radio14" value="da">
-
-                <label for="da">Да, могу</label>
-
-                <input type="radio" name="radio14" value="est_trudnosti">
-
-                <label for="est_trudnosti">Умеренные трудности</label>
-                <input type="radio" name="radio14" value="slojno">
-
-                <label for="slojno">Очень сложно</label>
-
-                <input type="radio" name="radio14" value="net">
-
-                <label for="net">Невозможно</label>
+                <label><input type="radio" name="radio14" value="da"/> Да, могу</label>
+                <label><input type="radio" name="radio14" value="est_trudnosti"/> Умеренные трудности</label>
+                <label><input type="radio" name="radio14" value="slojno"/> Очень сложно</label>
+                <label><input type="radio" name="radio14" value="net"/> Невозможно</label>
                 <hr>
                 <label for="radio">5. Расчесываться</label><br>
-
-                <input type="radio" name="radio15" value="da">
-
-                <label for="da">Да, могу</label>
-
-                <input type="radio" name="radio15" value="est_trudnosti">
-
-                <label for="est_trudnosti">Умеренные трудности</label>
-                <input type="radio" name="radio15" value="slojno">
-
-                <label for="slojno">Очень сложно</label>
-
-                <input type="radio" name="radio15" value="net">
-
-                <label for="net">Невозможно</label>
+                <label><input type="radio" name="radio15" value="da"/> Да, могу</label>
+                <label><input type="radio" name="radio15" value="est_trudnosti"/> Умеренные трудности</label>
+                <label><input type="radio" name="radio15" value="slojno"/> Очень сложно</label>
+                <label><input type="radio" name="radio15" value="net"/> Невозможно</label>
                 <hr>
                 <label for="radio">6. Обедать ножом и вилкой</label><br>
-
-                <input type="radio" name="radio16" value="da">
-
-                <label for="da">Да, могу</label>
-
-                <input type="radio" name="radio16" value="est_trudnosti">
-
-                <label for="est_trudnosti">Умеренные трудности</label>
-                <input type="radio" name="radio16" value="slojno">
-
-                <label for="slojno">Очень сложно</label>
-
-                <input type="radio" name="radio16" value="net">
-
-                <label for="net">Невозможно</label>
+                <label><input type="radio" name="radio16" value="da"/> Да, могу</label>
+                <label><input type="radio" name="radio16" value="est_trudnosti"/> Умеренные трудности</label>
+                <label><input type="radio" name="radio16" value="slojno"/> Очень сложно</label>
+                <input type="radio" name="radio16" value="net"/>Невозможно</label>
                 <hr>
                 <label for="radio">7. Дотянуться до верхней полки</label><br>
-
-                <input type="radio" name="radio17" value="da">
-
-                <label for="da">Да, могу</label>
-
-                <input type="radio" name="radio17" value="est_trudnosti">
-
-                <label for="est_trudnosti">Умеренные трудности</label>
-                <input type="radio" name="radio17" value="slojno">
-
-                <label for="slojno">Очень сложно</label>
-
-                <input type="radio" name="radio17" value="net">
-
-                <label for="net">Невозможно</label>
+                <label><input type="radio" name="radio17" value="da"/> Да, могу</label>
+                <label><input type="radio" name="radio17" value="est_trudnosti"/> Умеренные трудности</label>
+                <label><input type="radio" name="radio17" value="slojno"/> Очень сложно</label>
+                <label><input type="radio" name="radio17" value="net"/> Невозможно</label>
                 <hr>
                 <label for="radio">8. Поднять груз весом 5кг выше головы</label><br>
-
-                <input type="radio" name="radio18" value="da">
-
-                <label for="da">Да, могу</label>
-
-                <input type="radio" name="radio18" value="est_trudnosti">
-
-                <label for="est_trudnosti">Умеренные трудности</label>
-                <input type="radio" name="radio18" value="slojno">
-
-                <label for="slojno">Очень сложно</label>
-
-                <input type="radio" name="radio18" value="net">
-
-                <label for="net">Невозможно</label>
+                <label><input type="radio" name="radio18" value="da"/> Да, могу</label>
+                <label><input type="radio" name="radio18" value="est_trudnosti"/> Умеренные трудности</label>
+                <label><input type="radio" name="radio18" value="slojno"/> Очень сложно</label>
+                <label><input type="radio" name="radio18" value="net"/> Невозможно</label>
                 <hr>
                 <label for="radio">9. Кинуть мяч из-за головы</label><br>
-
-                <input type="radio" name="radio19" value="da">
-
-                <label for="da">Да, могу</label>
-
-                <input type="radio" name="radio19" value="est_trudnosti">
-
-                <label for="est_trudnosti">Умеренные трудности</label>
-                <input type="radio" name="radio19" value="slojno">
-
-                <label for="slojno">Очень сложно</label>
-
-                <input type="radio" name="radio19" value="net">
-
-                <label for="net">Невозможно</label>
+                <label><input type="radio" name="radio19" value="da"/> Да, могу</label>
+                <label><input type="radio" name="radio19" value="est_trudnosti"/> Умеренные трудности</label>
+                <label><input type="radio" name="radio19" value="slojno"/> Очень сложно</label>
+                <label><input type="radio" name="radio19" value="net"/> Невозможно</label>
                 <hr>
                 <label for="radio">10. Выполнять обычную работу</label><br>
-
-                <input type="radio" name="radio20" value="da">
-
-                <label for="da">Да, могу</label>
-
-                <input type="radio" name="radio20" value="est_trudnosti">
-
-                <label for="est_trudnosti">Умеренные трудности</label>
-                <input type="radio" name="radio20" value="slojno">
-
-                <label for="slojno">Очень сложно</label>
-
-                <input type="radio" name="radio20" value="net">
-
-                <label for="net">Невозможно</label>
+                <label><input type="radio" name="radio20" value="da"/> Да, могу</label>
+                <label><input type="radio" name="radio20" value="est_trudnosti"/> Умеренные трудности</label>
+                <label><input type="radio" name="radio20" value="slojno"/> Очень сложно</label>
+                <label><input type="radio" name="radio20" value="net"/> Невозможно</label>
                 <hr>
                 <label for="radio">11. Заниматься спортом</label><br>
-
-                <input type="radio" name="radio21" value="da">
-
-                <label for="da">Да, могу</label>
-
-                <input type="radio" name="radio21" value="est_trudnosti">
-
-                <label for="est_trudnosti">Умеренные трудности</label>
-                <input type="radio" name="radio21" value="slojno">
-
-                <label for="slojno">Очень сложно</label>
-
-                <input type="radio" name="radio21" value="net">
-
-                <label for="net">Невозможно</label>
+                <label><input type="radio" name="radio21" value="da"/> Да, могу</label>
+                <label><input type="radio" name="radio21" value="est_trudnosti"/> Умеренные трудности</label>
+                <label><input type="radio" name="radio21" value="slojno"/> Очень сложно</label>
+                <label><input type="radio" name="radio21" value="net"/> Невозможно</label>
                 <hr>
                 <label for="radio">12. Садиться и выходить из машины</label><br>
-
-                <input type="radio" name="radio22" value="da">
-
-                <label for="da">Да, могу</label>
-
-                <input type="radio" name="radio22" value="est_trudnosti">
-
-                <label for="est_trudnosti">Умеренные трудности</label>
-                <input type="radio" name="radio22" value="slojno">
-
-                <label for="slojno">Очень сложно</label>
-
-                <input type="radio" name="radio22" value="net">
-
-                <label for="net">Невозможно</label></div>
-            
-            <hr>
-            
+                <label><input type="radio" name="radio22" value="da"/> Да, могу</label>
+                <label><input type="radio" name="radio22" value="est_trudnosti"/> Умеренные трудности</label>
+                <label><input type="radio" name="radio22" value="slojno"/> Очень сложно</label>
+                <label><input type="radio" name="radio22" value="net"/> Невозможно</label></div>      
+    </div>
+            <hr>            
                 <h3>Пожалуйста, ответьте на следующие вопросы:</h3>
                 <hr>
                 <label for="radio">В целом, Вы удовлетворены вашим плечевым суставом?</label><br>
-
-                <input type="radio" name="radio23" value="da">
-
-                <label for="da">Да, удовлетворен</label>
-
-                <input type="radio" name="radio23" value="net">
-
-                <label for="net">Нет, не удовлетворен</label>
-
+                <label><input type="radio" name="radio23" value="da"/> Да, удовлетворен</label>
+                <label><input type="radio" name="radio23" value="net"/> Нет, не удовлетворен</label>
                 <hr>
                 <label for="radio">Вы смогли бы вернуться к прежнему уровню спортивных нагрузок?</label><br>
-
-                <input type="radio" name="radio24" value="da">
-
-                <label for="da">Да, смог</label>
-
-                <input type="radio" name="radio24" value="net">
-
-                <label for="net">Нет, не смог</label>
+                <label><input type="radio" name="radio24" value="da"/> Да, смог</label>
+                <label><input type="radio" name="radio24" value="net"/> Нет, не смог</label>
                 <hr>
                 <label for="radio">Пройденная реабилитация была эффективна?</label><br>
-
-                <input type="radio" name="radio25" value="da">
-
-                <label for="da">Да</label>
-
-                <input type="radio" name="radio25" value="net">
-
-                <label for="net">Нет</label>
-
-                <input type="radio" name="radio25" value="ne_znayu">
-                <label for="ne_znayu">Не знаю</label>
-
+                <label><input type="radio" name="radio25" value="da"/> Да</label>
+                <label><input type="radio" name="radio25" value="net"/> Нет</label>
+                <label><input type="radio" name="radio25" value="ne_znayu"/> Не знаю</label>
                 <hr>
                 <label for="radio">Согласились бы Вы на данную операцию, зная заранее о ее результатах?</label><br>
-
-                <input type="radio" name="radio26" value="da">
-
-                <label for="da">Да</label>
-
-                <input type="radio" name="radio26" value="net">
-
-                <label for="net">Нет</label>
-
-                <input type="radio" name="radio26" value="ne_znayu">
-                <label for="ne_znayu">Не знаю</label>
-
-                <hr>
+                <label><input type="radio" name="radio26" value="da"/> Да</label>
+                <label><input type="radio" name="radio26" value="net"/> Нет</label>
+                <label><input type="radio" name="radio26" value="ne_znayu"/> Не знаю</label>
+                <hr>              
                 
             <label for="slider">Оцените состояние (общая функция) вашего плечевого сустава на сегодня от 0% до 100% (норма):</label>
-
             <br>
-
             <span>0%</span>
-
             <input type="range" name="slider" class="myslider" id="sliderRange" value="3" step="1" min="0" max="100">
-
             <span>100%</span> <br>
-
             <p>Процент: <span id="demo"></span></p>
-
-
             <script>
                 var rangeslider = document.getElementById("sliderRange");
                 var output = document.getElementById("demo");
                 output.innerHTML = rangeslider.value;
-
                 rangeslider.oninput = function() {
                     output.innerHTML = this.value;
                 }
